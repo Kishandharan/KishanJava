@@ -22,7 +22,7 @@ public class C2 {
         }
         System.out.println("Round 2: "+prisons);
 
-        for(int j=2; j<5; j++){
+        for(int j=2; j<10; j++){
             for(int i=j; i<count1; i+=j+1){
                 if(prisons.get(i) == 'O'){
                     prisons.set(i, 'C');
@@ -31,6 +31,12 @@ public class C2 {
                 }
             }
             System.out.println("Round "+(j+1)+": "+prisons);
+        }
+
+        for(int i=0; i<count1; i++){
+            if(prisons.get(i) == 'O'){
+                System.out.println((i+1)+" Is a lucky prisoner");
+            }
         }
     }
 }
